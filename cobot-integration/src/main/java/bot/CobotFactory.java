@@ -15,11 +15,13 @@ public class CobotFactory {
     }
 
     public static Bot getBot(){
-        File resourcesDirectory = new File("cobot-integration/src/main/resources");
+        //File resourcesDirectory = new File("cobot-integration/src/main/resources");
+        File resourcesDirectory = new File("/home/cobot/Documents/code/java/Projects/GitHubProjects/cobot3/cobot-integration/src/main/resources");
         String path = resourcesDirectory.getAbsolutePath();
+        System.out.println(path);
         if (bot == null){
             //TO DO make path 4m rel2abs
-            bot = new Bot("bot",path);
+            bot = new Bot("cobot",path);
         }
         return bot;
     }

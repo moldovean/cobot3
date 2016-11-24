@@ -1,5 +1,6 @@
-package bot;
+package cobot;
 
+import bot.CobotFactory;
 import org.alicebot.ab.Bot;
 import org.alicebot.ab.Chat;
 
@@ -24,6 +25,4 @@ public class Cobot {
     public String getinputHistory(int index){
         return chat.inputHistory.get(index);
     }
-
-
 }

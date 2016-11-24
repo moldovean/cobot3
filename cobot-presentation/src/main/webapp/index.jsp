@@ -9,10 +9,11 @@
     <c:out value="${myVar}"></c:out>
 </h2>
 <c:set var="iaka" value="Adrian"></c:set>
-<c:out value="${iaka}">No Name</c:out>
+<c:out value="${iaka}"></c:out>
 <c:forEach items="${myList}" var="item">
     Item = ${item}<br>
 </c:forEach>
+
 
 </body>
 </html>

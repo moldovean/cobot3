@@ -35,6 +35,12 @@
     </dependencies>
 
     <build>
-        <finalName>cobot-presentation</finalName>
+        <finalName>cobot</finalName>
+        <resources>
+            <resource>
+                <directory>../cobot-integration/src/main/resources</directory>
+            </resource>
+        </resources>
+
     </build>
 </project>

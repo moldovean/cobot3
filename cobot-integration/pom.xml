@@ -11,6 +11,7 @@
 
     <artifactId>cobot-integration</artifactId>
 
+
     <repositories>
         <repository>
             <id>soluvas-public-snapshots</id>

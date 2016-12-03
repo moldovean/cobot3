@@ -1,0 +1,7 @@
+0,UNDE SE AFLA CNA,*,*,Chisinau#Comma bd. Stefan cel Mare si Sfint#Comma 198. Cod postal: MD-2004. <srai>PE CINE POT CONTACTA</srai>,cna.aiml
+0,UNDE SE AFLA ^ CNA,*,*,Sediul CNA se afla: Chisinau#Comma bd. Stefan cel Mare si Sfint#Comma 198. Cod postal: MD-2004. <srai>PE CINE POT CONTACTA</srai>,cna.aiml
+0,^ PE CINE POT CONTACTA ^,*,*,De cine aveti neoie? <srai>CONTACT CHOICE</srai>,cna.aiml
+0,CONTACT CNA RP,*,*,Persoana de Contact: Starinischi Angela. Tel: (022)257412,cna.aiml
+0,CUM POT CONTACTA SERVICIUL RELATII CU PUBLICUL,*,*,<srai>CONTACT CNA RP</srai>,cna.aiml
+0,PE CINE CONTACTEZ *,*,*,<srai>CONTACT CNA RP</srai>,cna.aiml
+0,CONTACT CNA DGAC,*,*,Persoana de Contact Directia Generala Anticoruptie Mihaila Viorel. Tel: 022 257 2162,cna.aiml

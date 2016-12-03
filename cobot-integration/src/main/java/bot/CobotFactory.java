@@ -15,8 +15,10 @@ public class CobotFactory {
     }
 
     public static Bot getBot(){
+        //File resourcesDirectory = new File("/home/adri/Documents/code/java/hack");
+        //tomcat
+        File resourcesDirectory = new File("../webapps/cobot/WEB-INF/classes");
         //File resourcesDirectory = new File("cobot-integration/src/main/resources");
-        File resourcesDirectory = new File("/home/cobot/Documents/code/java/Projects/GitHubProjects/cobot3/cobot-integration/src/main/resources");
         String path = resourcesDirectory.getAbsolutePath();
         System.out.println(path);
         if (bot == null){

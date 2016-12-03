@@ -1,0 +1,8 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<aiml version="2.0" encoding="UTF-8">
+<!-- Prescurtari -->
+<category>
+    <pattern><set>prescurtari</set> *</pattern>
+    <template><srai><map><name>prescurtari</name><star></star></map> <star><index>2</index></star></srai></template>
+</category>
+</aiml>

@@ -1,0 +1,71 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<aiml version="2.0" encoding="UTF-8">
+
+    <!-- Definitii -->
+    <category>
+        <pattern><set>question</set> <set>verb3p</set> <set>cnadef</set></pattern>
+        <template> <star index="3"></star>  <star index="2"></star> <map><name>cnadef</name><star index="3"></star></map> </template>
+    </category>
+
+    <!-- Date -->
+    <category>
+        <pattern>WHAT IS THE DATE</pattern>
+        <template>Astazi este <date format="%B %d, %Y" /></template>
+    </category>
+    <category>
+        <pattern>Ce data e astazi</pattern>
+        <template><srai>WHAT IS THE DATE</srai></template>
+    </category>
+    <category>
+        <pattern><set>question</set> ^ astazi</pattern>
+        <template><srai>WHAT IS THE DATE</srai></template>
+    </category>
+
+
+    <!-- Testing normalization and denormalization -->
+    <category>
+        <pattern>SAY *</pattern>
+        <template><star /></template>
+    </category>
+
+
+    <!-- Interactive Learning -->
+    <category>
+        <pattern>learn question * answer *</pattern>
+        <template>
+            <think>
+                <learnf>
+                    <category>
+                        <pattern><eval><star/></eval></pattern>
+                        <template><eval><star index="2"/></eval></template>
+                    </category>
+                </learnf>
+            </think>
+            Okay, I will answer "<star index="2"/>" to "<star/>" next time
+        </template>
+    </category>
+
+    <category>
+        <pattern>wrong</pattern>
+        <template>What should I have said?</template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>what should I have said</that>
+        <template>
+            <think>
+                <learnf>
+                    <category>
+                        <pattern><eval><input index="3"/></eval></pattern>
+                        <template><eval><star/></eval></template>
+                    </category>
+                </learnf>
+            </think>
+            Okay, I will answer "<star/>" to "<input index="3"/>" next time
+        </template>
+    </category>
+
+
+
+</aiml>

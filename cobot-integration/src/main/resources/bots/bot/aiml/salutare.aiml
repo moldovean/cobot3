@@ -1,0 +1,36 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<aiml version="2.0" encoding="UTF-8">
+    <category>
+        <pattern>GREETINGS</pattern>
+        <template>
+            <random>
+                <li>Vă salută #CoBoT din Centrul Național Anticorupție!</li>
+                <li>Bine ati venit! Eu sunt #CoBoT, stagiar în cadrul Centrului Național Anticorupție!</li>
+                <li>Vă Salut! Mă numesc CoBoT! Sunt stagiar în cadrul Centrului Național Anticorupție!</li>
+            </random>
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>
+            <set>greetings</set>
+        </pattern>
+        <template>
+            <srai>GREETINGS</srai>
+        </template>
+
+    </category>
+
+    <category>
+        <pattern>
+            <set>greetings ^</set>
+        </pattern>
+        <template>
+            <srai>GREETINGS</srai>
+        </template>
+
+    </category>
+
+
+</aiml>

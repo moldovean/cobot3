@@ -1,0 +1,3 @@
+0,GREETINGS,*,*,<random>#Newline                <li>Vă salută #CoBoT din Centrul Național Anticorupție!</li>#Newline                <li>Bine ati venit! Eu sunt #CoBoT#Comma stagiar în cadrul Centrului Național Anticorupție!</li>#Newline                <li>Vă Salut! Mă numesc CoBoT! Sunt stagiar în cadrul Centrului Național Anticorupție!</li>#Newline            </random>,salutare.aiml
+0,<SET>GREETINGS</SET>,*,*,<srai>GREETINGS</srai>,salutare.aiml
+0,<SET>GREETINGS ^</SET>,*,*,<srai>GREETINGS</srai>,salutare.aiml

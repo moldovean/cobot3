@@ -10,6 +10,7 @@ import java.io.File;
 public class CobotFactory {
     private static CobotFactory cf = null;
     private static Bot bot=null;
+    private static String pathToResources;
 
     private CobotFactory(){
     }
@@ -17,7 +18,9 @@ public class CobotFactory {
     public static Bot getBot(){
         //File resourcesDirectory = new File("/home/adri/Documents/code/java/hack");
         //tomcat
-        File resourcesDirectory = new File("../webapps/cobot/WEB-INF/classes");
+        pathToResources = "/home/adri/Documents/code/java/hack/cobot3/cobot-integration/src/main/resources";
+        //File resourcesDirectory = new File("../webapps/cobot/WEB-INF/classes"); // works with Tomcat
+        File resourcesDirectory = new File(pathToResources);
         //File resourcesDirectory = new File("cobot-integration/src/main/resources");
         String path = resourcesDirectory.getAbsolutePath();
         System.out.println(path);
@@ -26,5 +29,8 @@ public class CobotFactory {
             bot = new Bot("cobot",path);
         }
         return bot;
+    }
+    public static void modifyResources(String path){
+        pathToResources = path;
     }
 }

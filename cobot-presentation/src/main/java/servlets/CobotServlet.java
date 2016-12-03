@@ -1,6 +1,7 @@
 package servlets;
 
 import bot.Cobot;
+import bot.CobotFactory;
 import org.json.simple.JSONObject;
 
 import javax.servlet.ServletException;
@@ -30,6 +31,8 @@ public class CobotServlet extends HttpServlet {
         Cobot cobot = (Cobot) session.getAttribute("cobot");
         if (cobot == null){
             System.out.println("cobot was null!!!");
+            CobotFactory.modifyResources("../webapps/cobot/WEB-INF/classes");
+
             cobot = new Cobot();
             session.setAttribute("cobot", cobot);
         }

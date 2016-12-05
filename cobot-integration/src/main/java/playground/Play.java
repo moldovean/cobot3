@@ -11,6 +11,7 @@ import java.io.File;
  */
 public class Play {
     public static void main(String[] args) {
+        // https://github.com/josephmisiti/awesome-machine-learning#java-general-purpose
 
         File resourcesDirectory = new File("src/main/resources");
         System.out.println(resourcesDirectory.getAbsolutePath());

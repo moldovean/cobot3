@@ -30,5 +30,10 @@
             <artifactId>ab</artifactId>
             <version>4.0.4-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>edu.stanford.nlp</groupId>
+            <artifactId>stanford-corenlp</artifactId>
+            <version>LATEST</version>
+        </dependency>
     </dependencies>
 </project>

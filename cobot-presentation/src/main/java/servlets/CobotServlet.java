@@ -4,6 +4,7 @@ import bot.Cobot;
 import bot.CobotFactory;
 import org.json.simple.JSONObject;
 
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -31,7 +32,11 @@ public class CobotServlet extends HttpServlet {
         Cobot cobot = (Cobot) session.getAttribute("cobot");
         if (cobot == null){
             System.out.println("cobot was null!!!");
-            CobotFactory.modifyResources("../webapps/cobot/WEB-INF/classes");
+            CobotFactory.setPathToResources("../webapps/cobot/WEB-INF/classes"); //tomcat
+            //Glassfish
+            ServletContext context = this.getServletContext();
+            CobotFactory.setPathToResources(context.getRealPath("")+"/WEB-INF/classes/"); // Glassfish
+            //CobotFactory.setPathToResources("webapps/cobot/WEB-INF/classes");
 
             cobot = new Cobot();
             session.setAttribute("cobot", cobot);

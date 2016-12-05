@@ -6,18 +6,25 @@ import nlp.Tokenizer;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * Created by adri on 12/5/16.
  */
 public class SentenceTokenizerTest {
     public static void main(String[] args) {
-        String par = "This is a paragrath. El batjocoream duce sa faca un abacului. Eu ma duc la magazin.";
-        List<String> sentences = Tokenizer.tokenizeSentences(par);
+        String par = "salut . Ce mai faci? unde se afla cna? cine se duce? cînd ma duc?";
+        /*List<String> sentences = Tokenizer.tokenizeSentences(par);
         sentences.forEach(System.out::println);
-        sentences.stream().map(Tokenizer::lemmatizeSentence).forEach(System.out::println);
+        List<String> sentencesTokenized = sentences.stream()
+                .map(Tokenizer::lemmatizeSentence)
+                .collect(ArrayList::new,ArrayList::add,ArrayList::addAll);
+        System.out.println(sentencesTokenized);*/
+
 //        String[] words = {"El", "batjocoream", "duce", "sa", "faca", "un", "abacului"};
 //        ArrayList<String> wordsArray = Arrays.asList(words).stream().map(LemmaRo::getLemma).collect(ArrayList::new,(x, y)->x.add(y),ArrayList::addAll);
-
+//        String[] words = {"El", "batjocoream", "duce", "sa", "faca", "un", "abacului"};
+//        Arrays.asList(words).stream().map(LemmaRo::getLemma).forEach(System.out::println);
+        System.out.println(Tokenizer.lemmatizeParagraph(par));
     }
 }

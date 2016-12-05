@@ -2,17 +2,17 @@
 <aiml version="2.0" encoding = "UTF-8">
 
 	<category>
-		<pattern>UNDE SE AFLA CNA</pattern>
-		<template>Chisinau, bd. Stefan cel Mare si Sfint, 198. Cod postal: MD-2004. <srai>PE CINE POT CONTACTA</srai></template>
+		<pattern>UNDE SINE AFLA CNA</pattern>
+		<template>Chisinau, bd. Stefan cel Mare si Sfint, 198. Cod postal: MD-2004. <srai>PE CINE PUTEA CONTACTA</srai></template>
 	</category>
 
 	<category>
-		<pattern>UNDE SE AFLA ^ CNA</pattern>
-		<template>Sediul CNA se afla: Chisinau, bd. Stefan cel Mare si Sfint, 198. Cod postal: MD-2004. <srai>PE CINE POT CONTACTA</srai></template>
+		<pattern>UNDE SINE AFLA ^ CNA</pattern>
+		<template>Sediul CNA se află pe: <srai>NDE SINE AFLA CNA</srai> <srai>PE CINE PUTEA CONTACTA</srai></template>
 	</category>
 
 	<category>
-		<pattern>^ PE CINE POT CONTACTA ^</pattern>
+		<pattern>^ PE CINE PUTEA CONTACTA ^</pattern>
 		<template>De cine aveti neoie? <srai>CONTACT CHOICE</srai></template>
 	</category>
 
@@ -24,7 +24,7 @@
 	</category>
 
 	<category>
-		<pattern>CUM POT CONTACTA SERVICIUL RELATII CU PUBLICUL</pattern>
+		<pattern>cum ^ putea ^ contacta serviciu relaţie cu public</pattern>
 		<template><srai>CONTACT CNA RP</srai></template>
 	</category>
 

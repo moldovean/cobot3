@@ -1,5 +1,6 @@
 package bot;
 
+import nlp.Tokenizer;
 import org.alicebot.ab.Bot;
 import org.alicebot.ab.Chat;
 
@@ -17,7 +18,7 @@ public class Cobot {
 
     public String getResponse(String utterance){
         String answer;
-        answer = this.chat.multisentenceRespond(utterance);
+        answer = this.chat.multisentenceRespond(Tokenizer.lemmatizeParagraph(utterance));
         return answer;
     }
 

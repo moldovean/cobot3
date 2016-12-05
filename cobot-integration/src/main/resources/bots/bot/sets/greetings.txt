@@ -1,4 +1,6 @@
 Sal
+saluta
+mergeasa
 Salut
 Saluut
 Salutare

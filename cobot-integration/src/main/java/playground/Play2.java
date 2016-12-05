@@ -1,6 +1,7 @@
 package playground;
 
 import bot.Cobot;
+import nlp.Tokenizer;
 
 import java.util.Scanner;
 
@@ -15,6 +16,7 @@ public class Play2 {
         while (!(utterance.equals("bye"))){
             System.out.print("Your input: ");
             utterance = scanner.nextLine();
+            System.out.println(Tokenizer.lemmatizeParagraph(utterance));
             System.out.println(cobot.getResponse(utterance));
         }
 

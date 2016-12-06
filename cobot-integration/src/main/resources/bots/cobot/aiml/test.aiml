@@ -41,18 +41,18 @@
                     </category>
                 </learnf>
             </think>
-            Okay, I will answer "<star index="2"/>" to "<star/>" next time
+            Bine, numaidecât voi răspunde cu "<star index="2"/>" la "<star/>" data viitoare. ;-)
         </template>
     </category>
 
     <category>
         <pattern>wrong</pattern>
-        <template>What should I have said?</template>
+        <template>Ce ar fi trebuit să răspund?</template>
     </category>
 
     <category>
         <pattern>*</pattern>
-        <that>what should I have said</that>
+        <that>Ce ar fi trebuit să răspund</that>
         <template>
             <think>
                 <learnf>
@@ -62,7 +62,7 @@
                     </category>
                 </learnf>
             </think>
-            Okay, I will answer "<star/>" to "<input index="3"/>" next time
+            Am s-o iau în consideraţie. Data viitoare, numaidecât voi răspunde cu "<star/>" la "<input index="3"/>".
         </template>
     </category>
 

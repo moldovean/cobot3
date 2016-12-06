@@ -1,6 +1,7 @@
 package bot;
 
 import org.alicebot.ab.Bot;
+import util.ResourcesPath;
 
 import java.io.File;
 
@@ -10,7 +11,12 @@ import java.io.File;
 public class CobotFactory {
     private static CobotFactory cf = null;
     private static Bot bot=null;
-    private static String pathToResources = "/home/adri/Documents/code/java/hack/cobot3/cobot-integration/src/main/resources";
+    private static String pathToResources;
+    //private static String pathToResources = "/home/adri/Documents/code/java/hack/cobot3/cobot-integration/src/main/resources";
+
+    static {
+        pathToResources = ResourcesPath.getResourcePath(); //should give a relative path
+    }
 
     private CobotFactory(){
     }
@@ -30,7 +36,25 @@ public class CobotFactory {
         }
         return bot;
     }
-    public static void setPathToResources(String path){
+/*    public static void setPathToResources(String path){
         pathToResources = path;
+    }*/
+    //To Do OS
+    public static void setPathToResources(String server){
+        pathToResources = ResourcesPath.getResourcePath(server);
+        /*if (System.getProperty("os.name").contains("Windows")) {
+            if (server.contains("cat")) {
+                pathToResources = "..\\webapps\\cobot\\WEB-INF\\classes";
+            }
+            else {
+                pathToResources ="WEB-INF\\classes";
+            }
+        }
+        if(server.contains("cat")){
+            pathToResources = "../webapps/cobot/WEB-INF/classes";
+        }
+        else {
+            pathToResources = "/WEB-INF/classes/";
+        }*/
     }
 }

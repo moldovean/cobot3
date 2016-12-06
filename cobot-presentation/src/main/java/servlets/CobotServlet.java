@@ -3,6 +3,7 @@ package servlets;
 import bot.Cobot;
 import bot.CobotFactory;
 import org.json.simple.JSONObject;
+import util.ResourcesPath;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -32,11 +33,19 @@ public class CobotServlet extends HttpServlet {
         Cobot cobot = (Cobot) session.getAttribute("cobot");
         if (cobot == null){
             System.out.println("cobot was null!!!");
-            CobotFactory.setPathToResources("../webapps/cobot/WEB-INF/classes"); //tomcat
+            //CobotFactory.setPathToResources("../webapps/cobot/WEB-INF/classes"); //tomcat
+            //CobotFactory.setPathToResources("/home/adri/Documents/code/java/hack/cobot3/cobot-integration/src/main/resources");
+
+            //works
+            //CobotFactory.setPathToResources("tomcat","");
+            //testing path
+
             //Glassfish
             ServletContext context = this.getServletContext();
-            CobotFactory.setPathToResources(context.getRealPath("")+"/WEB-INF/classes/"); // Glassfish
-            //CobotFactory.setPathToResources("webapps/cobot/WEB-INF/classes");
+            System.out.println(context.getRealPath(""));
+
+            //CobotFactory.setPathToResources(context.getRealPath("")+"/WEB-INF/classes/"); // Glassfish
+            //CobotFactory.setPathToResources("glassfish", "");
 
             cobot = new Cobot();
             session.setAttribute("cobot", cobot);
@@ -52,6 +61,7 @@ public class CobotServlet extends HttpServlet {
         obj.put("question", utterance);
         obj.put("answer", answer);
         obj.put("previous_question", cobot.getinputHistory(1));
+        obj.put("path", this.getServletContext().getRealPath(""));
         //System.out.println(obj);
 
         writer.println(obj.toJSONString());

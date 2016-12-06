@@ -1,6 +1,8 @@
 package nlp;
 
 import java.io.*;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -15,6 +17,11 @@ public class LemmaRo {
     private static String pathToResources = "/home/adri/Documents/code/java/hack/cobot3/cobot-integration/src/main/resources/";
     // http://www.lexiconista.com/datasets/lemmatization/  <-- a contribution from Martin Verel, Civita.
 
+    static {
+        removeRecursionLvl1();
+        removeRecursionLvl2();
+        removeRecursionLvl3();
+    }
 
     private LemmaRo(){
 
@@ -32,7 +39,7 @@ public class LemmaRo {
                     new InputStreamReader(
                             new FileInputStream(file)))) {
                 while ((line=br.readLine())!=null){
-                    words = line.split("\\s");
+                    words = line.split("\\s+");
                     lemmaRo.put(words[1], words[0]);
                 }
 
@@ -44,6 +51,9 @@ public class LemmaRo {
                 e.printStackTrace();
             }
         }
+        //removeRecursionLvl1();
+        //emoveRecursionLvl2();
+        //three lvl recursion removal is enough for practical purposes
         return (HashMap<String, String>) lemmaRo;
     }
 
@@ -54,6 +64,37 @@ public class LemmaRo {
     }
     public static void setPathToResources(String path){
         pathToResources = path;
+    }
+
+    public static void removeRecursionLvl1(){
+        Map<String, String> dic = getLemmaRo();
+        ArrayList<String> vals = new ArrayList<>(dic.values());
+
+        for (String val : vals) {
+            if (val.equals(dic.get(dic.get(val)))){
+                dic.remove(val);
+            }
+        }
+    }
+
+    public static void removeRecursionLvl2(){
+        Map<String, String> dic = getLemmaRo();
+        ArrayList<String> vals = new ArrayList<>(dic.values());
+        for (String val : vals) {
+            if (val.equals(dic.get(dic.get(dic.get(val))))) {
+                dic.remove(val);
+            }
+        }
+    }
+
+    public static void removeRecursionLvl3(){
+        Map<String, String> dic = getLemmaRo();
+        ArrayList<String> vals = new ArrayList<>(dic.values());
+        for (String val : vals) {
+            if (val.equals(dic.get(dic.get(dic.get(dic.get(val)))))) {
+                dic.remove(val);
+            }
+        }
     }
 }
 

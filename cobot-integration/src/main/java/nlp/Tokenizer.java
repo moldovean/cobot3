@@ -28,9 +28,12 @@ public class Tokenizer {
         // at the moment it is lemmatizing based on a large Romanian Dictionary
         // it would be better to lemmatize it based on POS tagging.
         String[] words;
-        words = sentence.split("\\s");
+        words = sentence.split("\\s+");
 
-        ArrayList<String> wordsArray = Arrays.asList(words).stream().map(LemmaRo::getLemma).collect(ArrayList::new,(x,y)->x.add(y),ArrayList::addAll);
+        ArrayList<String> wordsArray = Arrays.asList(words).stream()
+                .parallel()
+                .map(LemmaRo::getLemma)
+                .collect(ArrayList::new,(x,y)->x.add(y),ArrayList::addAll);
         String result = String.join(" ", wordsArray);
         return result;
     }

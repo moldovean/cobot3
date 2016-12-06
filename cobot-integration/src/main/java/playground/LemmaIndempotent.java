@@ -12,6 +12,10 @@ import java.util.Set;
 public class LemmaIndempotent {
     public static void main(String[] args) {
         HashMap<String,String> dic = LemmaRo.getLemmaRo();
+        LemmaRo.removeRecursionLvl1();
+        LemmaRo.removeRecursionLvl2();
+        LemmaRo.removeRecursionLvl3();
+        dic = LemmaRo.getLemmaRo();
         Set<String> keys = dic.keySet();
         Collection<String> values = dic.values();
         int level1 = 0;
@@ -23,11 +27,11 @@ public class LemmaIndempotent {
                 level1++;
                 if (!(dic.get(dic.get(value)) == null)){
                     level2++;
-                    if(value.equals(dic.get(dic.get(value))) ) recursive++;
+                    if(value.equals(dic.get(dic.get(value))) && stop<20) recursive++;
                     else {
                         stop++;
-                        //System.out.print(value+" "+dic.get(value)+" : ");
-                        //System.out.println(dic.get(dic.get(value)));
+                        System.out.print(value+" "+dic.get(value)+" : ");
+                        System.out.println(dic.get(dic.get(value)));
                     }
                     //System.out.print(value+" "+dic.get(value)+" : ");
                     //System.out.println(dic.get(dic.get(value)));
@@ -40,5 +44,6 @@ public class LemmaIndempotent {
         System.out.println(level2);
         System.out.println(recursive);
         System.out.println(stop);
+        System.out.println("Size: "+dic.size());
     }
 }

@@ -18,7 +18,10 @@ public class Cobot {
 
     public String getResponse(String utterance){
         String answer;
-        answer = this.chat.multisentenceRespond(Tokenizer.lemmatizeParagraph(utterance));
+
+        answer = this.chat.multisentenceRespond(Tokenizer.lemmatizeParagraph(
+                        Tokenizer.lemmatizeParagraph(
+                                Tokenizer.lemmatizeParagraph(utterance))));
         return answer;
     }
 

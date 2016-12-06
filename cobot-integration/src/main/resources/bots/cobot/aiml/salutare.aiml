@@ -11,6 +11,15 @@
         </template>
     </category>
 
+    <category>
+        <pattern> ^ ce ^ face</pattern>
+        <template>
+            <random>
+                <li>Încerc să învăţ lucruri noi interacţionând cu Dvs. La care întrebări aţi dori sa vă răspund?</li>
+                <li>Avansez interacţionând cu alţi utilizatorii care-mi acordă atenţie!</li>
+            </random>
+        </template>
+    </category>
 
     <category>
         <pattern>

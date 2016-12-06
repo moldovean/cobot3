@@ -42,7 +42,7 @@ function insertMessage() {
     updateScrollbar();
 
     setTimeout(function() {
-        $.get('/cobot/cobot', { text: msg } ).done(function(data) {
+        $.get('/cobot', { text: msg } ).done(function(data) {
             fakeMessage(data.answer);
         });
     }, 150 + (Math.random() * 20) * 1);

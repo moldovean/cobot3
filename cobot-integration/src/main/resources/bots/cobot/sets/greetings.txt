@@ -1,6 +1,7 @@
 Sal
 saluta
 Salut
+salut
 Saluut
 Salutare
 Salve

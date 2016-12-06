@@ -12,7 +12,7 @@
 	</category>
 
 	<category>
-		<pattern>^ PE CINE PUTEA CONTACTA ^</pattern>
+		<pattern>^ PE CINE ^ PUTEA CONTACTA ^</pattern>
 		<template>De cine aveti neoie? <srai>CONTACT CHOICE</srai></template>
 	</category>
 

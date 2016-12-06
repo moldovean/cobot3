@@ -61,7 +61,7 @@ public class CobotServlet extends HttpServlet {
         obj.put("question", utterance);
         obj.put("answer", answer);
         obj.put("previous_question", cobot.getinputHistory(1));
-        obj.put("path", this.getServletContext().getRealPath(""));
+        //obj.put("path", this.getServletContext().getRealPath(""));
         //System.out.println(obj);
 
         writer.println(obj.toJSONString());

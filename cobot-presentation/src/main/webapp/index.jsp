@@ -60,32 +60,11 @@
                 <div class="messages_content">
                     <!-- Bot message container -->
                     <div class="bot_container">
-                        <span> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est? Ultimul Mesaj de la Bot</span>
-                        <p>2:47pm</p>
-                    </div>
-
-                    <!-- User message container -->
-                    <div class="user_container">
-                        <span> User User User Eeeeeyy proident, sunt in culpa qui officia deserunt mollit anim id est? Ultimul Mesaj de la Bot</span>
+                        <span> CoBoT Alpha version 1.06 Nickname> Grivei </span>
                         <p>2:47pm</p>
                     </div>
 
 
-
-                    <!-- Bot message container -->
-                    <div class="bot_container">
-                        <span> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est?</span>
-                        <p>3:27pm</p>
-                    </div>
-                    <!-- Bot message container -->
-                    <div class="bot_container">
-                        <span> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est?</span>
-                        <p>12:35am</p>
-                    </div>
-                    <!-- Bot message container -->
-                    <div class="bot_container">
-                        <span> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est?</span>
-                    </div>
                 </div>
             </div>
         </div>

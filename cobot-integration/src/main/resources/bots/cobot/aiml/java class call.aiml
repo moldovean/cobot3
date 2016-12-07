@@ -1,8 +1,0 @@
-<?xml version = "1.0" encoding = "UTF-8"?>
-
-<aiml version="2.0" encoding = "UTF-8">
-    <category>
-        <pattern>Da un exemplu *</pattern>
-        <template>Acesta va executa `exemplu method <star/>`</template>
-    </category>
-</aiml>

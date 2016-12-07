@@ -1,4 +1,0 @@
-0,GREETINGS,*,*,<random>#Newline                <li>Va saluta #CoBoT din Centrului Național Anticorupție!</li>#Newline                <li>Bine ati venit! Eu sunt #CoBoT#Comma stagiar in cadrul Centrului Național Anticorupție!</li>#Newline                <li>Vă Salut! Mă numesc CoBoT! Sunt stagiar in cadrul Centrului Național Anticorupție!</li>#Newline            </random>,salutare.aiml
-0,^ CE ^ FACE,*,*,<random>#Newline                <li>Încerc să învăţ lucruri noi interacţionând cu Dvs. La care întrebări aţi dori sa vă răspund?</li>#Newline                <li>Avansez interacţionând cu alţi utilizatorii care-mi acordă atenţie!</li>#Newline            </random>,salutare.aiml
-0,<SET>GREETINGS</SET>,*,*,<srai>GREETINGS</srai>,salutare.aiml
-0,<SET>GREETINGS ^</SET>,*,*,<srai>GREETINGS</srai>,salutare.aiml

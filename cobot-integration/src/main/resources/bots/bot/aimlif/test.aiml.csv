@@ -1,8 +1,0 @@
-0,<SET>QUESTION</SET> <SET>VERB3P</SET> <SET>CNADEF</SET>,*,*,<star index="3"/>  <star index="2"/> <map><name>cnadef</name><star index="3"/></map>,test.aiml
-0,WHAT IS THE DATE,*,*,Astazi este <date format="%B %d#Comma %Y"/>,test.aiml
-0,CE DATA E ASTAZI,*,*,<srai>WHAT IS THE DATE</srai>,test.aiml
-0,<SET>QUESTION</SET> ^ ASTAZI,*,*,<srai>WHAT IS THE DATE</srai>,test.aiml
-0,SAY *,*,*,<star/>,test.aiml
-0,LEARN QUESTION * ANSWER *,*,*,<think>#Newline                <learnf>#Newline                    <category>#Newline                        <pattern><eval><star/></eval></pattern>#Newline                        <template><eval><star index="2"/></eval></template>#Newline                    </category>#Newline                </learnf>#Newline            </think>#Newline            Okay#Comma I will answer "<star index="2"/>" to "<star/>" next time,test.aiml
-0,WRONG,*,*,What should I have said?,test.aiml
-0,*,WHAT SHOULD I HAVE SAID,*,<think>#Newline                <learnf>#Newline                    <category>#Newline                        <pattern><eval><input index="3"/></eval></pattern>#Newline                        <template><eval><star/></eval></template>#Newline                    </category>#Newline                </learnf>#Newline            </think>#Newline            Okay#Comma I will answer "<star/>" to "<input index="3"/>" next time,test.aiml

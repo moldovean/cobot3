@@ -6,7 +6,7 @@ import com.sun.org.apache.regexp.internal.RE;
  * Created by avrabie on 12/6/2016.
  */
 public class ResourcesPath {
-    private static String resourcePath = "/home/adri/Documents/code/java/hack/cobot3/cobot-integration/src/main/resources";
+    private static String resourcePath;
 
     private ResourcesPath(){}
 
@@ -16,7 +16,9 @@ public class ResourcesPath {
             resourcePath = "D:\\Work\\GitProjects\\cobot3\\cobot-integration\\src\\main\\resources";
         }
         else {
-            resourcePath = "/home/adri/Documents/code/java/hack/cobot3/cobot-integration/src/main/resources";
+            //resourcePath = "/home/adri/Documents/code/java/hack/cobot3/cobot-integration/src/main/resources";
+            // TO DO : relative (this needs to be changed)
+            resourcePath = "/home/cobot/Documents/code/java/Projects/GitHubProjects/cobot3/cobot-integration/src/main/resources";
         }
         return resourcePath;
     }

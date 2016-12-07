@@ -1,2 +1,2 @@
-fi:este
-sunt:este
+fi: este
+sunt: este

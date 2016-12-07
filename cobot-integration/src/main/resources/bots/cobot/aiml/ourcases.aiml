@@ -1,18 +1,22 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
-<aiml version="2.0" encoding = "UTF-8">
+<aiml version="2.0" encoding="UTF-8">
+
     <category>
         <pattern>CORRUPTION</pattern>
         <template>Da, situația descrisă pare să se încadreze într-o oarecare formă de corupție. <srai>REPORT IT</srai></template>
     </category>
+
     <category>
         <pattern>REPORT IT</pattern>
         <template>Ați dori să scriți o plângere în mod oficial despre acest caz</template>
     </category>
+
     <category>
         <pattern>DA</pattern>
         <that>Ați dori să scriți o plângere în mod oficial despre acest caz</that>
         <template>Atunci completați acest <a href="www.cna.md">formular</a>. </template>
     </category>
+
     <category>
         <pattern>NU</pattern>
         <that>Ați dori să scriți o plângere în mod oficial despre acest caz</that>
@@ -23,8 +27,6 @@
         <pattern><set>timeperiods</set> eu ^ cere sine ^ <set>transport</set> <set>back</set></pattern>
         <template>  Vă recomandăm să o raportați la CNA. <srai>CORRUPTION</srai>  </template>
     </category>
-
-
 
 
 </aiml>

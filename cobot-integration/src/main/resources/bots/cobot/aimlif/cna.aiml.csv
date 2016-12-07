@@ -5,3 +5,5 @@
 0,CUM ^ PUTEA ^ CONTACTA ^ RELAŢIE CU PUBLICA,*,*,<srai>CONTACT CNA RP</srai>,cna.aiml
 0,PE CINE CONTACTEZ *,*,*,<srai>CONTACT CNA RP</srai>,cna.aiml
 0,CONTACT CNA DGAC,*,*,Persoana de Contact Directia Generala Anticoruptie Mihaila Viorel. Tel: 022 257 2162,cna.aiml
+0,CUM ^ PUTEA ^ CONTACTA ^ LINIA FIERBINTE,*,*,Puteti suna la linia fierbinte la tel 0-800-55555,cna.aiml
+0,CUM ^ PUTEA ^ CONTACTA ^ LINIA ^ ANTICORUPŢIE,*,*,Puteti suna la linia fierbinte la tel 0-800-55555,cna.aiml

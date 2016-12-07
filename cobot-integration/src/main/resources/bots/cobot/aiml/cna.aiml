@@ -39,5 +39,14 @@
 		<template> Persoana de Contact Directia Generala Anticoruptie Mihaila Viorel. Tel: 022 257 2162 </template>
 	</category>
 
+	<category>
+		<pattern>cum ^ putea ^ contacta ^ linia fierbinte</pattern>
+		<template>Puteti suna la linia fierbinte la tel 0-800-55555</template>
+	</category>
+
+	<category>
+		<pattern>cum ^ putea ^ contacta ^ linia ^ anticorupţie</pattern>
+		<template>Puteti suna la linia fierbinte la tel 0-800-55555</template>
+	</category>
 
 </aiml>

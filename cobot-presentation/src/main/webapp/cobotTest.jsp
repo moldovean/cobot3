@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
+	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>CoBoT</title>
   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
@@ -42,7 +42,7 @@
 					</li>
 				</ul>
 
-				<a href="#" class="raposteaza_btn">DEPUNE O PLÂNGERE</a>
+				<a href="#" class="raposteaza_btn">DEPUNE O PLINGERE</a>
 			</div>
 			<a href="#mobile_navbar">
 				<i class="fixed_menu_button icon-menu"></i>

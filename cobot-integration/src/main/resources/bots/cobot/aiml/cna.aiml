@@ -1,6 +1,8 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
 <aiml version="2.0" encoding = "UTF-8">
 
+
+
 	<category>
 		<pattern>CNA LOCATION</pattern>
 		<template>Chisinau, bd. Stefan cel Mare si Sfint, 198. Cod postal: MD-2004. <srai>PE CINE PUTEA CONTACTA</srai></template>

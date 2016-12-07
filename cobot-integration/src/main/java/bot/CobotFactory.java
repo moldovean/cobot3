@@ -42,19 +42,5 @@ public class CobotFactory {
     //To Do OS
     public static void setPathToResources(String server){
         pathToResources = ResourcesPath.getResourcePath(server);
-        /*if (System.getProperty("os.name").contains("Windows")) {
-            if (server.contains("cat")) {
-                pathToResources = "..\\webapps\\cobot\\WEB-INF\\classes";
-            }
-            else {
-                pathToResources ="WEB-INF\\classes";
-            }
-        }
-        if(server.contains("cat")){
-            pathToResources = "../webapps/cobot/WEB-INF/classes";
-        }
-        else {
-            pathToResources = "/WEB-INF/classes/";
-        }*/
     }
 }

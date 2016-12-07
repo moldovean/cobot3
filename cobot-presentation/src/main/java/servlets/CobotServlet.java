@@ -1,10 +1,9 @@
 package servlets;
 
-import bot.Cobot;
+//import bot.Cobot;
+import cobot.Cobot;
 
 import org.json.simple.JSONObject;
-
-
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

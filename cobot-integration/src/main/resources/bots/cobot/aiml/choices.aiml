@@ -12,7 +12,7 @@
     </category>
 
     <category>
-        <pattern> ^ centru ^ combatere avea coruptiei</pattern>
+        <pattern>centru ^ combatere avea coruptiei</pattern>
         <that>Centrul de Combatere a Coruptiei // Linia Fierbinte // Relatii cu Publicul</that>
         <template><srai>CONTACT CNA DGAC</srai></template>
     </category>

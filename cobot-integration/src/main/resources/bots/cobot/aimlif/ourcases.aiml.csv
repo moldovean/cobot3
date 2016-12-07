@@ -1,0 +1,5 @@
+0,CORRUPTION,*,*,Da#Comma situația descrisă pare să se încadreze într-o oarecare formă de corupție. <srai>REPORT IT</srai>,ourcases.aiml
+0,REPORT IT,*,*,Ați dori să scriți o plângere în mod oficial despre acest caz,ourcases.aiml
+0,DA,AȚI DORI SĂ SCRIȚI O PLÂNGERE ÎN MOD OFICIAL DESPRE ACEST CAZ,*,Atunci completați acest <a href="www.cna.md">formular</a>.,ourcases.aiml
+0,NU,AȚI DORI SĂ SCRIȚI O PLÂNGERE ÎN MOD OFICIAL DESPRE ACEST CAZ,*,Nici o problemă. Oricum Vă mulțumim pentru cooperare#Comma iar cazul menționat va fi luat în considerație la elaborarea politicilor publice!,ourcases.aiml
+0,<SET>TIMEPERIODS</SET> EU ^ CERE SINE ^ <SET>TRANSPORT</SET> <SET>BACK</SET>,*,*,Vă recomandăm să o raportați la CNA. <srai>CORRUPTION</srai>,ourcases.aiml

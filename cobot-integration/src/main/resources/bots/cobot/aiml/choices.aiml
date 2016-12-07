@@ -2,19 +2,25 @@
 <aiml version="2.0" encoding = "UTF-8">
     <category>
         <pattern>CONTACT CHOICE</pattern>
-        <template>Centrul de Combatere a Coruptiei sau Relatii cu Publicul</template>
+        <template>Centrul de Combatere a Coruptiei // Linia Fierbinte // Relatii cu Publicul</template>
     </category>
 
     <category>
-        <pattern>relaţie cu publica</pattern>
-        <that>Centrul de Combatere a Coruptiei sau Relatii cu Publicul</that>
+        <pattern>^ relaţie ^ publica ^</pattern>
+        <that>Centrul de Combatere a Coruptiei // Linia Fierbinte // Relatii cu Publicul</that>
         <template>Relatii Cu Publicul <srai>CONTACT CNA RP</srai></template>
     </category>
 
     <category>
-        <pattern>centru de combatere avea coruptiei</pattern>
-        <that>Centrul de Combatere a Coruptiei sau Relatii cu Publicul</that>
+        <pattern> ^ centru ^ combatere avea coruptiei</pattern>
+        <that>Centrul de Combatere a Coruptiei // Linia Fierbinte // Relatii cu Publicul</that>
         <template><srai>CONTACT CNA DGAC</srai></template>
+    </category>
+
+    <category>
+        <pattern>^ linia fierbinte ^</pattern>
+        <that>Centrul de Combatere a Coruptiei // Linia Fierbinte // Relatii cu Publicul</that>
+        <template>Linia fierbinte la tel: 0-800-55555</template>
     </category>
 
 

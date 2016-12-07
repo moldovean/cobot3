@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>CoBoT</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/cobot.css">
     <link rel="stylesheet" href="css/qury_cobot.css">
+
 </head>
 <body>
 <section id="Cobot_content">
@@ -17,7 +18,7 @@
             <i class="icon-logo_cobot logo_app"></i>
             <ul class="list_folting_nav">
                 <li>
-                    <h3>Viorel Chetraru</h3>
+                    <h3>Jane Doe</h3>
                     <span>CNA DIRECTOR</span>
                 </li>
                 <li>
@@ -25,7 +26,7 @@
                     <span>CNA EMAIL</span>
                 </li>
                 <li>
-                    <h3>+373 22/ 257-257</h3>
+                    <h3>123-555-1234</h3>
                     <span>LINIE FIERBINTE</span>
                 </li>
                 <li>
@@ -41,8 +42,7 @@
                 </li>
             </ul>
 
-            <a href="http://old.cna.md/cum-declaram" target="_blank" class="raposteaza_btn">RAPORTEAZA O CRIMA</a>
-            <img class="support_img" src="img/baner-partnert.png" alt="">
+            <a href="#" class="raposteaza_btn">DEPUNE O PLINGERE</a>
         </div>
         <a href="#mobile_navbar">
             <i class="fixed_menu_button icon-menu"></i>
@@ -57,17 +57,21 @@
                         </div>
                     </form>
                 </div>
-                <div valign="bottom" class="messages_content">
+                <div class="messages_content">
                     <!-- Bot message container -->
                     <div class="bot_container">
-                        <span> Află la care întrebări îţi poate răspunde CoBoT (v Grivei) <a class="link_bot" href="#">aici</a> !</span>
-                        <p class="start_bot_time">2:47pm</p>
+                        <span> CoBoT Alpha version 1.06 Nickname> Grivei </span>
+                        <p>2:47pm</p>
                     </div>
+
+
                 </div>
             </div>
         </div>
     </div>
     <a class="waves-effect waves-light btn" href="#modal1">Modal</a>
+
+
 </section>
 <!-- Modal Structure -->
 <div id="mobile_navbar" class="modal">

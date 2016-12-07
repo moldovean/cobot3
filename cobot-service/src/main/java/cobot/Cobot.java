@@ -20,6 +20,8 @@ public class Cobot {
     public String getResponse(String utterance){
         String answer;
         //pre-bot-processing
+        System.out.println("History 1: "+getInputHistory(1));
+        System.out.println("History 2: "+getInputHistory(2));
 
         //processing
         utterance = Tokenizer.lemmatizeParagraph(Tokenizer.lemmatizeParagraph(Tokenizer.lemmatizeParagraph(utterance)));
@@ -30,7 +32,7 @@ public class Cobot {
         return answer;
     }
 
-    public String getinputHistory(int index){
+    public String getInputHistory(int index){
         return chat.inputHistory.get(index);
     }
 }

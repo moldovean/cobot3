@@ -3,17 +3,19 @@
 	.list_folting_nav li h3 {padding-top: 15px !important; font-size: 20px;}
 	.short_hr {margin-top: 30px;margin-bottom: 20px;}
 	.ora_cel h3 {margin-top: 40px !important;}
-	.list_folting_nav {margin-top: 6vh;}
+	.list_folting_nav {margin-top: 2vh;}
 	.user_container span,.bot_container span{font-size: 14px;}
+	.support_img{margin-top: 35px;}
 }
 /* Tablet Code */
 @media screen and (max-width: 900px){
 	.logo_app {font-size: 60px; width: 40px; padding-top: 6vh; padding-left: 10%;}
 	.list_folting_nav { margin-left: 10%; margin-top: 4vh;}
-	.list_folting_nav li h3 {padding-top: 10px !important;font-size: 18px;}
+	.list_folting_nav li h3 {padding-top: 20px !important;font-size: 18px;}
 	.short_hr {margin-top: 25px;}
-	.raposteaza_btn {margin-left: 10%;}
+	.raposteaza_btn {margin-left: 10%; top: 0;}
 	.user_container {right: 5%;}
+	.support_img{display: none;}
 }
 
 /* Mobile Code */

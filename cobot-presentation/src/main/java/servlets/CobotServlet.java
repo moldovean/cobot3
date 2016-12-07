@@ -1,6 +1,6 @@
 package servlets;
 
-//import bot.Cobot;
+//import bot.Cobot; //don't use this one!
 import cobot.Cobot;
 
 import org.json.simple.JSONObject;
@@ -59,7 +59,7 @@ public class CobotServlet extends HttpServlet {
         JSONObject obj = new JSONObject();
         obj.put("question", utterance);
         obj.put("answer", answer);
-        obj.put("previous_question", cobot.getinputHistory(1));
+        obj.put("previous_question", cobot.getInputHistory(1));
         //obj.put("path", this.getServletContext().getRealPath(""));
         //System.out.println(obj);
 

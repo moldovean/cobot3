@@ -1,9 +1,9 @@
 package servlets;
 
 import bot.Cobot;
-import bot.CobotFactory;
+
 import org.json.simple.JSONObject;
-import util.ResourcesPath;
+
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;

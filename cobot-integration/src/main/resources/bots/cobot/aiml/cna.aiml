@@ -1,8 +1,13 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
 <aiml version="2.0" encoding = "UTF-8">
 
+	<!-- Definitii -->
+	<category>
+		<pattern><set>question</set> <set>verb3p</set> <set>cnadef</set></pattern>
+		<template> <star index="3"></star>  <map><name>p3verb</name><star index="2"></star></map>  <map><name>cnadef</name><star index="3"></star></map> </template>
+	</category>
 
-
+	<!-- Where is CNA? -->
 	<category>
 		<pattern>CNA LOCATION</pattern>
 		<template>Chisinau, bd. Stefan cel Mare si Sfint, 198. Cod postal: MD-2004. <srai>PE CINE PUTEA CONTACTA</srai></template>

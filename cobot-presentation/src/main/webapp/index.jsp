@@ -18,8 +18,8 @@
 				<i class="icon-logo_cobot logo_app"></i>
 				<ul class="list_folting_nav">
 					<li>
-						<h3>Viorel Chetraru</h3>
-						<span>CNA DIRECTOR</span>
+						<h3>#CoBoT (ver: Grivei)</h3>
+						<span>Stagiar CNA</span>
 					</li>
 					<li>
 						<h3>secretariat@cna.md</h3>
@@ -54,7 +54,7 @@
 					<div id="fixed_input_box_send_msg_cont">
 						<form action="" id="chat_form">
 							<div class="input-field" >
-							  	<input type="text" autocomplete="off" id="msg_area"  placeholder="Say somthing">
+							  	<input type="text" autocomplete="off" id="msg_area"  placeholder="Încercăm să scrie corect aici...">
 							</div>
 						</form>
 					</div>

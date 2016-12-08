@@ -16,6 +16,7 @@ public class ResourcesPath {
             resourcePath = "D:\\Work\\GitProjects\\cobot3\\cobot-integration\\src\\main\\resources";
         }
         else {
+            //Change resource path when uploading to server.
             resourcePath = "/home/adri/Documents/code/java/hack/cobot3/cobot-integration/src/main/resources";
             // TO DO : relative (this needs to be changed)
             //resourcePath = "/home/cobot/Documents/code/java/Projects/GitHubProjects/cobot3/cobot-integration/src/main/resources";

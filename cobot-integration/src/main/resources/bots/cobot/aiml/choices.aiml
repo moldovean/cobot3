@@ -6,6 +6,26 @@
     </category>
 
     <category>
+        <pattern>avea dori sine vorbi cu ^</pattern>
+        <template>Puteti contacta <srai>CONTACT CHOICE</srai> Pe cine aţi dori să-i contactaţi?</template>
+    </category>
+
+    <category>
+        <pattern>avea nevoie ^</pattern>
+        <template> Voi considera sa ofer servicii de <star></star> în viitor. La moment eu pot oferi <br/>
+        <ol>
+            <li>date de contact:<srai>CONTACT CHOICE</srai> </li>
+            <li>raportarea cazurilor de coruptie (being implemented) </li>
+            <li>definiţii şi informaţii cu caracter general (corupere pasivă, activă, etc)</li>
+            <li>clasificarea cazurilor de corupţie (not fully implemented)</li>
+            <li>altele</li>
+        </ol>
+            <br/> Cel mai important: pot învăţa de la tine lucruri noi, pentru asta citeşte <a href="/manualul">manualul</a>, iar dacă doreşti să foloseşti API-ul nostru, contactează echipa #CoBoT.
+            We'd be happy to help you set up your own chat-bot, provided you're OK with English, because there are no NLP tools for Romanian.
+        </template>
+    </category>
+
+    <category>
         <pattern>^ relaţie ^ publica ^</pattern>
         <that>Centrul de Combatere a Coruptiei // Linia Fierbinte // Relatii cu Publicul</that>
         <template>Relatii Cu Publicul <srai>CONTACT CNA RP</srai></template>

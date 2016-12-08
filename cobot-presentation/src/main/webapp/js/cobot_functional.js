@@ -107,6 +107,7 @@ $(document).ready(function() {
 		}
 	});
 	// appending Navbar in meniu modal for mobile
-	
+    // putting bot message curent time
+    $(".start_bot_time").html(formatAMPM());
 
 });

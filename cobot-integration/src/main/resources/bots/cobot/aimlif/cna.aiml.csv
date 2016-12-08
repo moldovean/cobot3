@@ -1,3 +1,4 @@
+0,<SET>QUESTION</SET> <SET>VERB3P</SET> <SET>CNADEF</SET>,*,*,<star index="3"/>  <map><name>p3verb</name><star index="2"/></map>  <map><name>cnadef</name><star index="3"/></map>,cna.aiml
 0,CNA LOCATION,*,*,Chisinau#Comma bd. Stefan cel Mare si Sfint#Comma 198. Cod postal: MD-2004. <srai>PE CINE PUTEA CONTACTA</srai>,cna.aiml
 0,UNDE SINE AFLA ^ CNA,*,*,Sediul CNA se află pe: <srai>CNA LOCATION</srai> <srai>PE CINE PUTEA CONTACTA</srai>,cna.aiml
 0,^ PE CINE ^ PUTEA CONTACTA ^,*,*,De cine aveti neoie? <srai>CONTACT CHOICE</srai>,cna.aiml

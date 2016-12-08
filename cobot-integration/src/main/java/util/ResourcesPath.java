@@ -1,5 +1,6 @@
 package util;
 
+import bot.CobotFactory;
 import com.sun.org.apache.regexp.internal.RE;
 
 /**
@@ -14,12 +15,15 @@ public class ResourcesPath {
         String os = System.getProperty("os.name");
         if(os.contains("Windows")){
             resourcePath = "D:\\Work\\GitProjects\\cobot3\\cobot-integration\\src\\main\\resources";
+            resourcePath = CobotFactory.class.getClassLoader().getResource("").getPath();
+            System.out.println("iaka: "+resourcePath);
         }
         else {
             //Change resource path when uploading to server.
             //resourcePath = "/home/adri/Documents/code/java/hack/cobot3/cobot-integration/src/main/resources";
             // TO DO : relative (this needs to be changed)
             resourcePath = "/home/cobot/Documents/code/java/Projects/GitHubProjects/cobot3/cobot-integration/src/main/resources";
+            resourcePath = CobotFactory.class.getClassLoader().getResource("").getPath();
         }
         return resourcePath;
     }

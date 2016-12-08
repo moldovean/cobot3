@@ -15,8 +15,9 @@ public class ReflectionTest {
         String res = null;
         try {
             aClass = Class.forName("helpers." + args.get(0));
+            Object obj = aClass.newInstance();
             Method m = aClass.getDeclaredMethod(args.get(1), List.class);
-            res = (String) m.invoke(aClass, args.subList(2,args.size()));
+            res = (String) m.invoke(obj, args.subList(2,args.size()));
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (NoSuchMethodException e) {
@@ -24,6 +25,8 @@ public class ReflectionTest {
         } catch (IllegalAccessException e) {
             e.printStackTrace();
         } catch (InvocationTargetException e) {
+            e.printStackTrace();
+        } catch (InstantiationException e) {
             e.printStackTrace();
         }
         return res;

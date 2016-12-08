@@ -28,4 +28,94 @@
         </plugins>
     </build>
 
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+            <comments>A business-friendly OSS license</comments>
+        </license>
+    </licenses>
+
+    <organization>
+        <name>UNDP</name>
+        <url>http://www.md.undp.org/</url>
+    </organization>
+
+    <developers>
+
+
+        <developer>
+            <id>dlenroc</id>
+            <name>Cornel Duplachi</name>
+            <email>dlenroc@gmail.com</email>
+            <url>http://dlenroc.github.io</url>
+            <organization>YOPESO</organization>
+            <organizationUrl>http://www.yopeso.com</organizationUrl>
+            <roles>
+                <role>developer</role>
+                <role>hacker</role>
+            </roles>
+            <timezone>Europe/Bucharest</timezone>
+        </developer>
+
+        <developer>
+            <id>avrabie</id>
+            <name>Adrian Vrabie</name>
+            <email>adrian@vrabie.net</email>
+            <url>http://www.vrabie.net:8080</url>
+            <organization>ENDAVA</organization>
+            <organizationUrl>http://www.endava.com</organizationUrl>
+            <roles>
+                <role>architect</role>
+                <role>developer</role>
+            </roles>
+            <timezone>Europe/Bucharest</timezone>
+        </developer>
+
+        <developer>
+            <id>mrhook</id>
+            <name>Stefan Cirlig</name>
+            <email>redeyeshark@gmail.com</email>
+            <url></url>
+            <organization></organization>
+            <organizationUrl></organizationUrl>
+            <roles>
+                <role>developer</role>
+                <role>back-end</role>
+            </roles>
+            <timezone>Europe/Bucharest</timezone>
+        </developer>
+
+        <developer>
+            <id>mrhook</id>
+            <name>Iulian Cirlig</name>
+            <email>iulic33@gmail.com</email>
+            <url></url>
+            <organization></organization>
+            <organizationUrl></organizationUrl>
+            <roles>
+                <role>developer</role>
+                <role>front-end</role>
+            </roles>
+            <timezone>Europe/Bucharest</timezone>
+        </developer>
+
+        <developer>
+            <id>dlenroc</id>
+            <name>Cornel Duplachi</name>
+            <email>dlenroc@gmail.com</email>
+            <url>http://dlenroc.github.io</url>
+            <organization>YOPESO</organization>
+            <organizationUrl>http://www.yopeso.com</organizationUrl>
+            <roles>
+                <role>developer</role>
+                <role>hacker</role>
+            </roles>
+            <timezone>Europe/Bucharest</timezone>
+        </developer>
+
+
+    </developers>
+
 </project>

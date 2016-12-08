@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
  */
 public class SentenceTokenizerTest {
     public static void main(String[] args) {
-        String par = "salut . Ce mai faci? unde se afla cna? cine se duce? cînd ma duc?";
+        String par = "The inter Mr. Turcanu is the intern at endava. He likes going shopping for sweets.";
         /*List<String> sentences = Tokenizer.tokenizeSentences(par);
         sentences.forEach(System.out::println);
         List<String> sentencesTokenized = sentences.stream()

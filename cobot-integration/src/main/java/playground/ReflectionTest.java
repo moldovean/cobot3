@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import static util.HelperClass.callHelperClass;
 
 
 /**
@@ -18,7 +19,7 @@ public class ReflectionTest {
 
     public static void main(String[] args) throws ClassNotFoundException, IllegalAccessException, InstantiationException, NoSuchMethodException, InvocationTargetException {
 
-        HelperClass.callHelperClass(new ArrayList<String>(Arrays.asList("SampleClass", "sampleRun3", "unu", "doi", "trei")));
+        callHelperClass(new ArrayList<String>(Arrays.asList("SampleClass", "sampleRun3", "unu", "doi", "trei")));
 
         /*Class aClass = Class.forName("helpers." + "SampleClass");
         //Object o = aClass.newInstance();
@@ -26,5 +27,8 @@ public class ReflectionTest {
         Object ret = m.invoke(aClass, "ok");
         System.out.println((String) ret);*/
 
+        String result;
+        result = callHelperClass(new ArrayList<String>(Arrays.asList("DexOnline", "getDexDefinition", "cartier")));
+        System.out.println(result);
     }
 }

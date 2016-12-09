@@ -32,6 +32,9 @@ public class DexOnline {
         for (Element element : definition.select("i")) {
             element.remove();
         }
+        for (Element element : definition.select("sup, sub")) {
+            element.remove();
+        }
 
         result.append(definition.text()) ;
         String formatedResult = result.toString().replaceAll("(\\d+\\.)", "\n$1").trim();

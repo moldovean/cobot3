@@ -14,8 +14,14 @@ public class HelperClass {
         try {
             aClass = Class.forName("helpers." + args.get(0));
             Object obj = aClass.newInstance();
-            Method m = aClass.getDeclaredMethod(args.get(1), List.class);
-            res = (String) m.invoke(obj, args.subList(2,args.size()));
+            Method m = null;
+            if (args.size() > 3) {
+                m = aClass.getDeclaredMethod(args.get(1), List.class);
+                res = (String) m.invoke(obj, args.subList(2,args.size()));
+            } else {
+                m = aClass.getDeclaredMethod(args.get(1), String.class);
+                res = (String) m.invoke(obj, args.get(2));
+            }
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (NoSuchMethodException e) {

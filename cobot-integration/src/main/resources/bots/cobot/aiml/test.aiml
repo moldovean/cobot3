@@ -3,6 +3,16 @@
 
 
 
+    <!-- Dictionary support -->
+    <category>
+        <pattern>CE-I ăla *</pattern>
+        <template>`DexOnline getDexDefinition <star index="1"></star>`</template>
+    </category>
+    <category>
+        <pattern>DEFINE *</pattern>
+        <template>`DexOnline getDexDefinition <star index="1"></star>`</template>
+    </category>
+
     <!-- Date -->
     <category>
         <pattern>WHAT IS THE DATE</pattern>

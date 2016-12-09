@@ -28,7 +28,8 @@ public class ReflectionTest {
         System.out.println((String) ret);*/
 
         String result;
-        result = callHelperClass(new ArrayList<String>(Arrays.asList("DexOnline", "getDexDefinition", "cartier")));
+        //result = callHelperClass(new ArrayList<String>(Arrays.asList("DexOnline", "getDexDefinition", "cartier")));
+        result = callHelperClass(Arrays.asList("DexOnline", "getDexDefinition", "cartier"));
         System.out.println(result);
     }
 }

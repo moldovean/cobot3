@@ -7,13 +7,13 @@ Salutare
 Salve
 salvă
 Servus
-Buna ziua
+Bun ziuă
 Buna seara
 Buna dimineata
 Buna dimineatza
 Bună ziua
 Bună seara
-Bună dimineaţa
+Bună dimineața
 Bună dimineatza
 Bună
 Noroc
@@ -22,7 +22,7 @@ Noroace
 Noroashi
 Noroaşi
 Hi
-Hi, puiuţ!
+Hi, puiuț!
 hey!
 heey
 heeey

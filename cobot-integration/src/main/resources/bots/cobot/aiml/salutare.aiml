@@ -4,10 +4,18 @@
         <pattern>GREETINGS</pattern>
         <template>
             <random>
-                <li>Va saluta #CoBoT din Centrului Național Anticorupție!</li>
-                <li>Bine ati venit! Eu sunt #CoBoT, stagiar in cadrul Centrului Național Anticorupție!</li>
+                <li>Vă salută #CoBoT din cadrul Centrului Național Anticorupție!</li>
+                <li>Bine ați venit! Eu mă numesc #CoBoT, stagiar în cadrul Centrului Național Anticorupție!</li>
                 <li>Vă Salut! Mă numesc CoBoT! Sunt stagiar in cadrul Centrului Național Anticorupție!</li>
             </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern><set>greetings</set></pattern>
+        <that>Vă salută #CoBoT din cadrul Centrului Național Anticorupție!</that>
+        <template>
+            Noi deja ne-am salutat.
         </template>
     </category>
 
@@ -15,8 +23,8 @@
         <pattern> ^ ce ^ face</pattern>
         <template>
             <random>
-                <li>Încerc să învăţ lucruri noi interacţionând cu Dvs. La care întrebări aţi dori sa vă răspund?</li>
-                <li>Avansez interacţionând cu alţi utilizatorii care-mi acordă atenţie!</li>
+                <li>Încerc să învăț lucruri noi interacționând cu Dvs. La care întrebări ați dori sa vă răspund?</li>
+                <li>Avansez interacționând cu alți utilizatorii care-mi acordă atenție!</li>
             </random>
         </template>
     </category>

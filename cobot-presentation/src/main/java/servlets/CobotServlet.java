@@ -23,7 +23,7 @@ public class CobotServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //super.doGet(req, resp);
         resp.setCharacterEncoding("UTF-8");
-        resp.setContentType("application/json");
+        resp.setContentType("application/json; cahrset=UTF-8");
 
         resp.setHeader("Pragma", "no-cache");
         resp.setHeader("Cache-Control", "private, no-store, no-cache, must-revalidate");

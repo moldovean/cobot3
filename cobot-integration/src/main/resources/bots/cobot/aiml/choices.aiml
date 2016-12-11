@@ -2,12 +2,12 @@
 <aiml version="2.0" encoding = "UTF-8">
     <category>
         <pattern>CONTACT CHOICE</pattern>
-        <template>Centrul de Combatere a Coruptiei // Linia Fierbinte // Relatii cu Publicul</template>
+        <template>Centrul de Combatere a Corupției // Linia Fierbinte // Relații cu Publicul</template>
     </category>
 
     <category>
         <pattern>avea dori sine vorbi cu ^</pattern>
-        <template>Puteti contacta <srai>CONTACT CHOICE</srai> Pe cine aţi dori să-i contactaţi?</template>
+        <template>Pe cine ați dori să-i contactați? <srai>CONTACT CHOICE</srai></template>
     </category>
 
     <category>
@@ -16,30 +16,30 @@
         <ol>
             <li>date de contact:<srai>CONTACT CHOICE</srai> </li>
             <li>raportarea cazurilor de coruptie (being implemented) </li>
-            <li>definiţii şi informaţii cu caracter general (corupere pasivă, activă, etc)</li>
-            <li>clasificarea cazurilor de corupţie (not fully implemented)</li>
+            <li>definiții și informații cu caracter general (corupere pasivă, activă, etc)</li>
+            <li>clasificarea cazurilor de corupție (not fully implemented)</li>
             <li>altele</li>
         </ol>
-            <br/> Cel mai important: pot învăţa de la tine lucruri noi, pentru asta citeşte <a href="/manualul">manualul</a>, iar dacă doreşti să foloseşti API-ul nostru, contactează echipa #CoBoT.
+            <br/> Cel mai important: pot învăța de la tine lucruri noi, pentru asta citește <a href="/manualul">manualul</a>, iar dacă dorești să folosești API-ul nostru, contactează echipa #CoBoT.
             We'd be happy to help you set up your own chat-bot, provided you're OK with English, because there are no NLP tools for Romanian.
         </template>
     </category>
 
     <category>
-        <pattern>^ relaţie ^ publica ^</pattern>
-        <that>Centrul de Combatere a Coruptiei // Linia Fierbinte // Relatii cu Publicul</that>
+        <pattern>^ relatie ^ publica ^</pattern>
+        <that>Centrul de Combatere a Corupției // Linia Fierbinte // Relații cu Publicul</that>
         <template>Relatii Cu Publicul <srai>CONTACT CNA RP</srai></template>
     </category>
 
     <category>
         <pattern>centru ^ combatere avea coruptiei</pattern>
-        <that>Centrul de Combatere a Coruptiei // Linia Fierbinte // Relatii cu Publicul</that>
+        <that>Centrul de Combatere a Corupției // Linia Fierbinte // Relații cu Publicul</that>
         <template><srai>CONTACT CNA DGAC</srai></template>
     </category>
 
     <category>
         <pattern>^ linia fierbinte ^</pattern>
-        <that>Centrul de Combatere a Coruptiei // Linia Fierbinte // Relatii cu Publicul</that>
+        <that>Centrul de Combatere a Corupției // Linia Fierbinte // Relații cu Publicul</that>
         <template>Linia fierbinte la tel: 0-800-55555</template>
     </category>
 

@@ -9,7 +9,7 @@
 
 	<category>
 		<pattern>^ defini ^ <set>cnadef</set> ^</pattern>
-		<template><star index="3"></star> se defineşte în felul următor <map><name>cnadef</name><star index="3"></star></map> </template>
+		<template><star index="3"></star> se definește în felul următor <map><name>cnadef</name><star index="3"></star></map> </template>
 	</category>
 
 	<!-- Where is CNA? -->
@@ -35,7 +35,7 @@
 	</category>
 
 	<category>
-		<pattern>cum ^ putea ^ contacta ^ relaţie cu publica</pattern>
+		<pattern>cum ^ putea ^ contacta ^ relație cu publica</pattern>
 		<template><srai>CONTACT CNA RP</srai></template>
 	</category>
 
@@ -55,7 +55,7 @@
 	</category>
 
 	<category>
-		<pattern>cum ^ putea ^ contacta ^ linia ^ anticorupţie</pattern>
+		<pattern>cum ^ putea ^ contacta ^ linia ^ anticorupție</pattern>
 		<template>Puteti suna la linia fierbinte la tel 0-800-55555</template>
 	</category>
 

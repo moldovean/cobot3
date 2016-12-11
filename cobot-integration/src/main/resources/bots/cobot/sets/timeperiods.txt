@@ -1,14 +1,16 @@
 noapte
-seară
-dimineața
+seara
 dimineata
+dimineata
+dimineața
 dimineata
 dimineață
-dimineața
+amiază
 seara
 seară
+prînz
+prânz
 la prânz
-noaptea
-la amiaza
+noapte
 la amiază
-la orele
+la oră

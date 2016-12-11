@@ -21,7 +21,7 @@
     </category>
 
     <category>
-        <pattern>LEARN * ARE *</pattern>
+        <pattern>LEARN * AVEA *</pattern>
         <template>
             Ok I will learn that <star index="1"/> are <star index="2"/>.
             <srai>XEDUCATE WHAT ARE XSPLIT <star index="1"/> XSPLIT <star index="2"/></srai>

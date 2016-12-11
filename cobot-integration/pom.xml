@@ -50,5 +50,17 @@
             <version>1.10.1</version>
         </dependency>
 
+        <!--spelling-->
+        <dependency>
+            <groupId>org.languagetool</groupId>
+            <artifactId>language-en</artifactId>
+            <version>3.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.languagetool</groupId>
+            <artifactId>language-ro</artifactId>
+            <version>LATEST</version>
+        </dependency>
+
     </dependencies>
 </project>

@@ -55,6 +55,18 @@
         <pattern>wrong</pattern>
         <template>Ce ar fi trebuit să răspund?</template>
     </category>
+    <category>
+        <pattern>greși</pattern>
+        <template>Ce ar fi trebuit să răspund?</template>
+    </category>
+    <category>
+        <pattern>gresi</pattern>
+        <template>Ce ar fi trebuit să răspund?</template>
+    </category>
+    <category>
+        <pattern>greşit</pattern>
+        <template>Ce ar fi trebuit să răspund?</template>
+    </category>
 
     <category>
         <pattern>*</pattern>

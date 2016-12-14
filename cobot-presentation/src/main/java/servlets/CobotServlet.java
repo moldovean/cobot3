@@ -14,6 +14,11 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+/*
+ *  I think the you need to choose Tomcat or GlassFish ?
+ */
+
+
 /**
  * Created by cobot on 11/24/16.
  */

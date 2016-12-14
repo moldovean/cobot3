@@ -22,6 +22,7 @@ public class CobotFactory {
     }
 
     public static Bot getBot(){
+        // Comment is need here ?
         //File resourcesDirectory = new File("/home/adri/Documents/code/java/hack");
         //File resourcesDirectory = new File("cobot-integration/src/main/resources");
         //pathToResources = "/home/adri/Documents/code/java/hack/cobot3/cobot-integration/src/main/resources";

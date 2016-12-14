@@ -5,6 +5,8 @@ import java.util.List;
 /**
  * Created by adri on 12/8/16.
  */
+
+// You use SampleClass and SampleClass2 -> can remove ?
 public class SampleClass {
     public static String sampleRun(String string) {
         return "This is the output from the class";

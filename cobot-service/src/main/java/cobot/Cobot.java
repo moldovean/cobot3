@@ -24,7 +24,7 @@ public class Cobot {
     }
 
     public String getResponse(String utterance){
-        String answer;
+        String answer="";
         Set<String> wrong = new HashSet<>(Arrays.asList("wrong","gresit","greşit"));
         Matcher matcher;
         Pattern rexExp;

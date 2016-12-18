@@ -3,24 +3,33 @@
 
     <!--cere mita-->
     <category>
-        <pattern>eu avea cere mită</pattern>
-        <template>Am prins-o și pe asta</template>
+        <pattern>eu avea cere mită ^</pattern>
+        <template><srai>CORRUPTION</srai></template>
     </category>
     <category>
-        <pattern>cere eu avea  mită</pattern>
-        <template>Am prins-o și pe asta</template>
+        <pattern>cere eu avea  mită ^</pattern>
+        <template><srai>CORRUPTION</srai></template>
     </category>
 
 
     <!-- Dictionary support -->
     <category>
+        <pattern>DEFINE *</pattern>
+        <template>`DexOnline getDexDefinition <star index="1"></star>`</template>
+    </category>
+    <category>
         <pattern>CE-I ăla *</pattern>
         <template>`DexOnline getDexDefinition <star index="1"></star>`</template>
     </category>
     <category>
-        <pattern>DEFINE *</pattern>
+        <pattern>care fi definiție cuvânta *</pattern>
         <template>`DexOnline getDexDefinition <star index="1"></star>`</template>
     </category>
+    <category>
+        <pattern>care fi definiție *</pattern>
+        <template><srai>DEFINE <star index="1"></star></srai></template>
+    </category>
+
 
     <!-- Date -->
     <category>

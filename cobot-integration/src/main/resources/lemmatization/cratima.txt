@@ -4,7 +4,7 @@ mi-am    mie am
 mi-aș    mie aș
 m-am    mă am
 m-au    mă a
-m-a    mă a
+m-a    el mă a
 s-a    se a
 să-mi    să îmi
 ți-a    ție a
@@ -20,6 +20,7 @@ n-o    nu o
 asta-i    asta este
 l-ai    îl ai
 l-a    îl a
+l-am    îl am
 da-mi    dă îmi
 într-o    întru una singură
 care-i    care este

@@ -3,6 +3,7 @@
 -o    pe ea
 -se    sine
 -ți    ție
+-te    tu
 -l    el
 -aș    aș
 -au    a

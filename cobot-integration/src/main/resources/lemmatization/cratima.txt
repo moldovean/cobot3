@@ -1,11 +1,14 @@
 mi-e    mie este
 mi-a    mie a
 mi-am    mie am
+mi-aș    mie aș
 m-am    mă am
+m-au    mă a
 m-a    mă a
 s-a    se a
 să-mi    să îmi
 ți-a    ție a
+ți-aș    ție și
 ți-am    ție am
 ți-e    ție este
 ți-l    ție îl
@@ -16,9 +19,6 @@ c-o    că una
 n-o    nu o
 asta-i    asta este
 l-ai    îl ai
+l-a    îl a
 da-mi    dă îmi
 într-o    întru una singură
--mi    îmi
--am    am
--o    pe ea
--se    sine

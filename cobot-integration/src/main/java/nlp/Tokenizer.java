@@ -33,6 +33,7 @@ public class Tokenizer {
         ArrayList<String> wordsArray = Arrays.asList(words).stream()
                 .parallel()
                 .map(HyphenRo::dehyphenise)
+                .map(HyphenRo::dehypheniseSuffix)
                 .map(LemmaRo::getLemma)
                 .collect(ArrayList::new,(x,y)->x.add(y),ArrayList::addAll);
         String result = String.join(" ", wordsArray);

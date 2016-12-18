@@ -1,6 +1,15 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
 <aiml version="2.0" encoding="UTF-8">
 
+    <!--cere mita-->
+    <category>
+        <pattern>eu avea cere mită</pattern>
+        <template>Am prins-o și pe asta</template>
+    </category>
+    <category>
+        <pattern>cere eu avea  mită</pattern>
+        <template>Am prins-o și pe asta</template>
+    </category>
 
 
     <!-- Dictionary support -->

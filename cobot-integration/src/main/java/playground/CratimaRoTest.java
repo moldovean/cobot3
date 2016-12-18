@@ -9,6 +9,7 @@ import java.io.IOException;
  */
 public class CratimaRoTest {
     public static void main(String[] args) throws IOException {
+        System.out.println(HyphenRo.getCratimaSuffixRo());
         System.out.println(HyphenRo.getCratimaRo());
     }
 }

@@ -8,3 +8,4 @@
 -au    a
 -a    a
 -i    lui
+-s    sunt

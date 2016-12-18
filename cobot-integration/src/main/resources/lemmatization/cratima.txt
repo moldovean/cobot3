@@ -22,3 +22,12 @@ l-ai    îl ai
 l-a    îl a
 da-mi    dă îmi
 într-o    întru una singură
+care-i    care este
+cine-i    cine este
+unde-i    unde este
+cares    care sunt
+cines    cine sunt
+undes    unde sunt
+ce-i    ce este
+cei    ce este
+te-a    te a

@@ -56,6 +56,8 @@ public class Cobot {
         //bot-processing
         System.out.println("User typed: "+utterance);
         utterance = utterance.toLowerCase();
+        // process short words
+
         utterance = Tokenizer.lemmatizeParagraph(Tokenizer.lemmatizeParagraph(Tokenizer.lemmatizeParagraph(utterance)));
         System.out.println("Bot understood: "+utterance);
         answer = this.chat.multisentenceRespond(utterance);

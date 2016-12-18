@@ -1,0 +1,18 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<aiml version="2.0" encoding = "UTF-8">
+    <category>
+        <pattern><set>professions</set> nou pune nota jos dacă nu vrea oferi cadou ^</pattern>
+        <template>Seamănă cu un caz de corupție din domeniul educației. <srai>CORRUPTION</srai></template>
+    </category>
+
+    <category>
+        <pattern><set>professions</set> nou pune nota jos </pattern>
+        <template>Nu seamana cu un caz de coruptie.</template>
+    </category>
+
+    <category>
+        <pattern>eu avea cere ^ leu ^ ca sine avea vrea nota mai mare de 5</pattern>
+        <template>Cazul dvs pare a fi un caz de corupție <srai>CORRUPTION</srai></template>
+    </category>
+
+</aiml>

@@ -41,7 +41,7 @@
 
     <category>
         <pattern>
-            <set>greetings ^</set>
+            <set>greetings</set> ^
         </pattern>
         <template>
             <srai>GREETINGS</srai>

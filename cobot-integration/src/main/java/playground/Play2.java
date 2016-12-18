@@ -16,7 +16,9 @@ public class Play2 {
         while (!(utterance.equals("bye"))){
             System.out.print("Your input: ");
             utterance = scanner.nextLine();
+            utterance = utterance.toLowerCase();
             System.out.println(Tokenizer.lemmatizeParagraph(Tokenizer.lemmatizeParagraph(Tokenizer.lemmatizeParagraph(utterance))));
+            utterance = Tokenizer.lemmatizeParagraph(Tokenizer.lemmatizeParagraph(Tokenizer.lemmatizeParagraph(utterance)));
             System.out.println(cobot.getResponse(utterance));
         }
 

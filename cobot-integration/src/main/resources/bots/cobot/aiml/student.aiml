@@ -1,0 +1,84 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<aiml version="2.0" encoding="UTF-8">
+    <!-- Student complaining -->
+    <!-- cases:
+    Profesorul i-a pus unei colege de-a mele o notă mult mai mare ca a mea, chiar dacă eu am scris la fel.
+    Învățătorul mi-a pus o notă mică iar colegului meu i-a pus nota 10, chiar dacă el nu a scris mult mai bine.
+    -->
+    <category>
+        <pattern><set>professions</set> ^ pune ^ nota ^ <set>professions</set> ^</pattern>
+        <template>Credeți că este un caz de <abbr title="def corupere activa"> corupere activă </abbr> sau corupere pasivă?</template>
+    </category>
+
+
+    <category>
+        <pattern><set>professions</set> ^ pune ^ <set>professions</set> ^ nota ^</pattern>
+        <template>Credeți că acel student i-a oferit mită?</template>
+    </category>
+
+    <category>
+        <pattern>1</pattern>
+        <that>Credeți că este un caz de corupere activă sau corupere pasivă</that>
+        <template>Ați putea să ne oferiți mai multe detalii?</template>
+    </category>
+    <category>
+        <pattern>2</pattern>
+        <that>Credeți că este un caz de corupere activă sau corupere pasivă</that>
+        <template>Ați putea să ne oferiți mai multe detalii?</template>
+    </category>
+
+
+    <category>
+        <pattern>DA</pattern>
+        <that>Credeți că acel student i-a oferit mită</that>
+        <template>Ați putea să ne oferiți mai multe detalii?</template>
+    </category>
+
+    <category>
+        <pattern>NU</pattern>
+        <that>Credeți că acel student i-a oferit mită</that>
+        <template>Atunci v-aș îndemna să nu invidiați pe colegii dvs dar să vă concentrați asupra cunoștințelor dvs. Mult succes în continure</template>
+    </category>
+
+    <category>
+        <pattern>DA</pattern>
+        <that>Ați putea să ne oferiți mai multe detalii</that>
+        <template><srai>CORRUPTION</srai></template>
+    </category>
+
+    <category>
+        <pattern>NU</pattern>
+        <that>Ați putea să ne oferiți mai multe detalii</that>
+        <template>Atunci vă doresc mult succes la școală, dacă depistați vreun caz de corupție, nu ezitați</template>
+    </category>
+
+    <category>
+        <pattern>DA</pattern>
+        <that>Aceasta pare a fi un caz de corupție, ați dori să îl raportați?</that>
+        <template>Atunci completați acest <a href="www.cna.md">formular</a>.</template>
+    </category>
+
+    <category>
+        <pattern>NU</pattern>
+        <that>Aceasta pare a fi un caz de corupție, ați dori să îl raportați?</that>
+        <template>Atunci să aveți o zi cât mai plăcută, iar în caz că depistați vre-un caz de corupție reveniți din nou</template>
+    </category>
+
+    <!-- Spying student -->
+    <category>
+        <pattern>Am văzut ^ <set>teacher</set> i-a dat ^ copiat ^ <set>student</set></pattern>
+        <template>Aceasta pare a fi un caz de corupție, ați dori să îl raportați?</template>
+    </category>
+
+    <category>
+        <pattern>DA</pattern>
+        <that>Aceasta pare a fi un caz de corupție, ați dori să îl raportați?</that>
+        <template>Atunci completați acest <a href="www.cna.md">formular</a>.</template>
+    </category>
+
+    <category>
+        <pattern>NU</pattern>
+        <that>Aceasta pare a fi un caz de corupție, ați dori să îl raportați?</that>
+        <template>Atunci să aveți o zi cât mai plăcută, iar în caz că depistați vre-un caz de corupție reveniți din nou</template>
+    </category>
+</aiml>

@@ -1,5 +1,55 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
 <aiml version="2.0" encoding = "UTF-8">
+
+    <!-- Interactive Learning -->
+    <category>
+        <pattern>learn question * answer *</pattern>
+        <template>
+            <think>
+                <learnf>
+                    <category>
+                        <pattern><eval><star/></eval></pattern>
+                        <template><eval><star index="2"/></eval></template>
+                    </category>
+                </learnf>
+            </think>
+            Bine, numaidecât voi răspunde cu "<star index="2"/>" la "<star/>" data viitoare.
+        </template>
+    </category>
+
+    <category>
+        <pattern>wrong</pattern>
+        <template>Ce ar fi trebuit să răspund?</template>
+    </category>
+    <category>
+        <pattern>greși</pattern>
+        <template>Ce ar fi trebuit să răspund?</template>
+    </category>
+    <category>
+        <pattern>gresi</pattern>
+        <template>Ce ar fi trebuit să răspund?</template>
+    </category>
+    <category>
+        <pattern>greşit</pattern>
+        <template>Ce ar fi trebuit să răspund?</template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>Ce ar fi trebuit să răspund</that>
+        <template>
+            <think>
+                <learnf>
+                    <category>
+                        <pattern><eval><input index="3"/></eval></pattern>
+                        <template><eval><star/></eval></template>
+                    </category>
+                </learnf>
+            </think>
+            Am s-o iau în considerație. Data viitoare, numaidecât voi răspunde cu "<star/>" la "<input index="3"/>".
+        </template>
+    </category>
+
     <category>
         <pattern>LEARN * FI *</pattern>
         <template>

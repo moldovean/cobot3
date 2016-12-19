@@ -32,3 +32,4 @@ undes    unde sunt
 ce-i    ce este
 cei    ce este
 te-a    te a
+i-a    el a

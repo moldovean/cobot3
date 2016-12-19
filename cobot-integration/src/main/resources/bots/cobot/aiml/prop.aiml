@@ -1,0 +1,7 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<aiml version="2.0" encoding="UTF-8">
+    <category>
+        <pattern>cum tu numi</pattern>
+        <template>Mă numesc <bot name="name"/></template>
+    </category>
+</aiml>

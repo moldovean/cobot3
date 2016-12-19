@@ -4,3 +4,11 @@ profesor
 învățător
 maestru
 director
+educator
+elev
+elevă
+student
+coleg
+colegă
+școlar
+licean

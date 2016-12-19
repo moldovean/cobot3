@@ -1,15 +1,6 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
 <aiml version="2.0" encoding="UTF-8">
 
-    <!--cere mita-->
-    <category>
-        <pattern>eu avea cere mită ^</pattern>
-        <template><srai>CORRUPTION</srai></template>
-    </category>
-    <category>
-        <pattern>cere eu avea  mită ^</pattern>
-        <template><srai>CORRUPTION</srai></template>
-    </category>
 
 
     <!-- Dictionary support -->
@@ -37,7 +28,7 @@
         <template>Astazi este <date format="%B %d, %Y" /></template>
     </category>
     <category>
-        <pattern>Ce data e astazi</pattern>
+        <pattern>Ce data fi astăzi</pattern>
         <template><srai>WHAT IS THE DATE</srai></template>
     </category>
     <category>
@@ -53,52 +44,28 @@
     </category>
 
 
-    <!-- Interactive Learning -->
+    <!--pictures-->
     <category>
-        <pattern>learn question * answer *</pattern>
+        <pattern>show me avea cat</pattern>
         <template>
-            <think>
-                <learnf>
-                    <category>
-                        <pattern><eval><star/></eval></pattern>
-                        <template><eval><star index="2"/></eval></template>
-                    </category>
-                </learnf>
-            </think>
-            Bine, numaidecât voi răspunde cu "<star index="2"/>" la "<star/>" data viitoare.
+            Iaka pisica:
+            <img src="http://www.aflacum.ro/images/photo_galleries/large/17576/viermi-pisica.jpg" style="width:130px;height:100px; float:right;"></img>
         </template>
     </category>
 
+    <!--formular nu merge -->
     <category>
-        <pattern>wrong</pattern>
-        <template>Ce ar fi trebuit să răspund?</template>
-    </category>
-    <category>
-        <pattern>greși</pattern>
-        <template>Ce ar fi trebuit să răspund?</template>
-    </category>
-    <category>
-        <pattern>gresi</pattern>
-        <template>Ce ar fi trebuit să răspund?</template>
-    </category>
-    <category>
-        <pattern>greşit</pattern>
-        <template>Ce ar fi trebuit să răspund?</template>
-    </category>
-
-    <category>
-        <pattern>*</pattern>
-        <that>Ce ar fi trebuit să răspund</that>
+        <pattern>formular</pattern>
         <template>
-            <think>
-                <learnf>
-                    <category>
-                        <pattern><eval><input index="3"/></eval></pattern>
-                        <template><eval><star/></eval></template>
-                    </category>
-                </learnf>
-            </think>
-            Am s-o iau în considerație. Data viitoare, numaidecât voi răspunde cu "<star/>" la "<input index="3"/>".
+            <form action="iaka.jsp">
+                First name:<br/>
+                <input type="text" name="firstname" value="Mickey" />
+                <br/>
+                Last name:<br/>
+                <input type="text" name="lastname" value="Mouse" />
+                <br/>
+                <input type="submit" value="Submit" />
+            </form>
         </template>
     </category>
 

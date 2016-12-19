@@ -1,0 +1,63 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<aiml version="2.0" encoding="UTF-8">
+
+    <!--cere mita-->
+    <category>
+        <pattern>eu ^ avea cere mită ^</pattern>
+        <template><srai>CORRUPTION</srai></template>
+    </category>
+    <category>
+        <pattern>^ eu ^ avea cere mită ^</pattern>
+        <template><srai>CORRUPTION</srai></template>
+    </category>
+    <category>
+        <pattern>cere eu avea  mită ^</pattern>
+        <template><srai>CORRUPTION</srai></template>
+    </category>
+
+
+    <!--report corruption-->
+    <category>
+        <pattern>CORRUPTION</pattern>
+        <template>Da, situația descrisă pare să se încadreze într-o oarecare formă de corupție. <srai>REPORT IT</srai></template>
+    </category>
+
+    <category>
+        <pattern>REPORT IT</pattern>
+        <template>Ați dori să depuneți o plângere în mod oficial asupra acestui caz?</template>
+    </category>
+
+    <category>
+        <pattern>DA</pattern>
+        <that>Ați dori să depuneți o plângere în mod oficial asupra acestui caz</that>
+        <template>Atunci completați acest <a href="www.cna.md">formular</a>. </template>
+    </category>
+
+        <!--if yes-->
+
+    <category>
+        <pattern>NU</pattern>
+        <that>Ați dori să depuneți o plângere în mod oficial asupra acestui caz</that>
+        <template>Nici o problemă. Oricum Vă mulțumim pentru cooperare, iar cazul menționat va fi luat în considerație la elaborarea politicilor publice!</template>
+    </category>
+
+    <!--not corruption-->
+    <category>
+        <pattern>NOT CORRUPTION</pattern>
+        <template>Situația descrisă de Dvs. nu pare să se încadreze într-un act de corupție.</template>
+    </category>
+
+    <!--proposal-->
+    <category>
+        <pattern>ABILITIES *</pattern>
+        <template>
+            <random>
+                <li>Ați dori să depuneți o plângere în mod oficial asupra acestui caz?</li>
+                <li>Ați dori să aflați care este definiția cuvântului <star index="1"></star>?</li>
+            </random>
+        </template>
+    </category>
+
+
+
+</aiml>
